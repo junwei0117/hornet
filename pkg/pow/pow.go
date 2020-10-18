@@ -3,7 +3,8 @@ package pow
 import (
 	"time"
 
-	"github.com/iotaledger/iota.go/pow"
+	// "github.com/iotaledger/iota.go/pow"
+	"github.com/DLTcollab/dcurl/cgo/pow"
 	"github.com/iotaledger/iota.go/trinary"
 
 	"github.com/iotaledger/hive.go/logger"
@@ -32,7 +33,9 @@ type Handler struct {
 func New(log *logger.Logger, powsrvAPIKey string, powsrvInitCooldown time.Duration) *Handler {
 
 	// Get the fastest available local PoW func
-	localPoWType, localPoWFunc := pow.GetFastestProofOfWorkUnsyncImpl()
+	// localPoWType, localPoWFunc := pow.GetFastestProofOfWorkUnsyncImpl()
+	localPoWType := "Dcurl"
+	localPoWFunc := pow.DcurlProofOfWork
 
 	var powsrvClient *powsrvio.PowClient
 

@@ -1,10 +1,50 @@
 {
   "acceptAnyConnection": false,
-  "maxPeers": 5,
+  "maxPeers": 9,
   "peers": [
     {
-      "identity": "example.neighbor.com:15600",
-      "alias": "Example Peer",
+      "identity": "m2.iotaledger.net:15600",
+      "alias": "Krzysztof Taraszka",
+      "preferIPv6": false
+    },
+    {
+      "identity": "m4.iotaledger.net:16100",
+      "alias": "Krzysztof Taraszka",
+      "preferIPv6": false
+    },
+    {
+      "identity": "node8.puyuma.org:15600",
+      "alias": "node8",
+      "preferIPv6": false
+    },
+    {
+      "identity": "node10.puyuma.org:15600",
+      "alias": "node10",
+      "preferIPv6": false
+    },
+    {
+      "identity": "node.deviceproof.org:15600",
+      "alias": "devorg",
+      "preferIPv6": false
+    },
+    {
+      "identity": "140.127.196.91:15600",
+      "alias": "isu-1",
+      "preferIPv6": false
+    },
+    {
+      "identity": "140.127.196.92:15600",
+      "alias": "isu-2",
+      "preferIPv6": false
+    },
+    {
+      "identity": "renovatio.gotdns.ch:15600",
+      "alias": "Nod Ihcron#6598",
+      "preferIPv6": false
+    },
+    {
+      "identity": "iota-nn4.fritid.as:15600",
+      "alias": "frha#8632",
       "preferIPv6": false
     }
   ]
